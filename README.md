@@ -7,9 +7,9 @@ Socket programming with botnet and C&amp;C server
 The bots will listen commands from C&C Server and execute the commands.
 
 ```
-+------+   +------------+   +------------+
-| BOT  |---| C&C Server |---| BOT Master |
-+------+   +------------+   +------------+
++-----+   +------------+   +------------+
+| BOT |---| C&C Server |---| BOT Master |
++-----+   +------------+   +------------+
 ```
 
 ### The lab purpose
