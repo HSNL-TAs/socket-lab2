@@ -14,22 +14,22 @@ class WinCmdControl(Resource):
 
     def put(self):
         win_cmds['cmd_id'] = request.data
-        print request.data
+        # print request.data
         return {'cmd_id': win_cmds['cmd_id']}
 
 
-class OsxCmdControl(Resource):
+class UnixCmdControl(Resource):
     def get(self):
         return unix_cmds['cmd_id']
 
     def put(self):
         unix_cmds['cmd_id'] = request.data
-        print request.data
+        # print request.data
         return {'cmd_id': unix_cmds['cmd_id']}
 
 
 api.add_resource(WinCmdControl, '/win')
-api.add_resource(OsxCmdControl, '/unix')
+api.add_resource(UnixCmdControl, '/unix')
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
