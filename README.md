@@ -18,5 +18,6 @@ All students need to program a BOT client for lab2.
 
 ### TODO
 
-* Improve C&C Server: Change return content when BOT master POST the commands to it. 
-* A BOT Master program: a bot master program use raw socket to change C&C server content.
+- [x] Improve C&C Server: Change return content when BOT master PUT the commands to it. 
+- [x] A BOT Master program (Using requests lib PUT the command)
+- [ ] A BOT Master program: a bot master program use raw socket to change C&C server content.
