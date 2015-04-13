@@ -12,3 +12,4 @@ ping -c 10 8.8.8.8
 
 Linux:
 xdg-open http://www.hao123.com
+ping -c 10 8.8.8.8
