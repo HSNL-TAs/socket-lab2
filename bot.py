@@ -4,7 +4,7 @@ import time
 
 HOST = '140.114.71.175'    # The remote host
 PORT = 5000                # The same port as used by the server
-GET = '/'
+GET = '/unix'
 
 
 def getcmd(string):
