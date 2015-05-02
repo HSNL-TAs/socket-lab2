@@ -20,5 +20,5 @@ while True:
     data = s.recv(1024)
     print '[!] Server says: %s' % data
 
-s.close
+s.close()
 
