@@ -11,12 +11,15 @@ s.bind((host, port))
 s.listen(1)
 print '[!] Server is listening client...'
 conn, addr = s.accept()
-client_ip = addr[0]
-print '[!] connected by %s' % client_ip
+
+print '[!] connected by %s' % addr[0]
+
 while True:
     data = conn.recv(1024)
+
     if not data:
         break
-    print '[!] Received string \'%s\' from cilent %s' % (data, client_ip)
+    print '[!] Received string "%s" from cilent %s' % (data, addr[0])
     conn.sendall(data)
+
 conn.close()

@@ -21,4 +21,3 @@ while True:
     print '[!] Server says: %s' % data
 
 s.close()
-
